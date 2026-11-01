@@ -1,0 +1,17 @@
+model,word,mean_p_negative
+charcnn,musalman,0.755
+charcnn,hindu,0.315
+charcnn,sikh,0.21
+charcnn,christian,0.331
+bilstm_attn,musalman,0.289
+bilstm_attn,hindu,0.176
+bilstm_attn,sikh,0.244
+bilstm_attn,christian,0.244
+textcnn,musalman,0.276
+textcnn,hindu,0.237
+textcnn,sikh,0.211
+textcnn,christian,0.211
+transformer,musalman,0.727
+transformer,hindu,0.151
+transformer,sikh,0.142
+transformer,christian,0.142

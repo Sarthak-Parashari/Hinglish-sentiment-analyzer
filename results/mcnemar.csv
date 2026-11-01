@@ -1,0 +1,5 @@
+model,baseline_only_correct,model_only_correct,p_value
+BiLSTM + attention,60,22,0.0
+TextCNN (word),66,26,0.0
+CharCNN,28,30,0.8957
+Transformer (from scratch),66,27,0.0001

@@ -1,0 +1,36 @@
+model,slice,n,accuracy
+TF-IDF + LogReg (word+char),all,388,0.698
+TF-IDF + LogReg (word+char),<=3 words,36,0.833
+TF-IDF + LogReg (word+char),4-8 words,137,0.723
+TF-IDF + LogReg (word+char),9-15 words,138,0.63
+TF-IDF + LogReg (word+char),>15 words,77,0.714
+TF-IDF + LogReg (word+char),has negator,57,0.579
+TF-IDF + LogReg (word+char),no negator,331,0.719
+BiLSTM + attention,all,388,0.601
+BiLSTM + attention,<=3 words,36,0.722
+BiLSTM + attention,4-8 words,137,0.606
+BiLSTM + attention,9-15 words,138,0.572
+BiLSTM + attention,>15 words,77,0.584
+BiLSTM + attention,has negator,57,0.491
+BiLSTM + attention,no negator,331,0.619
+TextCNN (word),all,388,0.595
+TextCNN (word),<=3 words,36,0.667
+TextCNN (word),4-8 words,137,0.599
+TextCNN (word),9-15 words,138,0.565
+TextCNN (word),>15 words,77,0.61
+TextCNN (word),has negator,57,0.596
+TextCNN (word),no negator,331,0.595
+CharCNN,all,388,0.704
+CharCNN,<=3 words,36,0.778
+CharCNN,4-8 words,137,0.73
+CharCNN,9-15 words,138,0.63
+CharCNN,>15 words,77,0.753
+CharCNN,has negator,57,0.596
+CharCNN,no negator,331,0.722
+Transformer (from scratch),all,388,0.598
+Transformer (from scratch),<=3 words,36,0.639
+Transformer (from scratch),4-8 words,137,0.584
+Transformer (from scratch),9-15 words,138,0.522
+Transformer (from scratch),>15 words,77,0.74
+Transformer (from scratch),has negator,57,0.526
+Transformer (from scratch),no negator,331,0.61

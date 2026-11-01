@@ -1,0 +1,26 @@
+
+=== bilstm_attn  (level=word, vocab=2423, val OOV=15.7%, truncated train=0.7%) ===
+  cand 0: val macro-F1=0.605 (epoch 13, 59s)  {'model': {'emb_dim': 128, 'hidden': 128, 'dropout': 0.4}, 'lr': 0.002}
+  cand 1: val macro-F1=0.584 (epoch 18, 71s)  {'model': {'emb_dim': 128, 'hidden': 128, 'dropout': 0.5}, 'lr': 0.001}
+  cand 2: val macro-F1=0.641 (epoch 7, 23s)  {'model': {'emb_dim': 100, 'hidden': 64, 'dropout': 0.3}, 'lr': 0.002}
+  -> TEST macro-F1 0.591 +/- 0.013 over seeds [42, 43, 44]  (params=344,319)
+
+=== textcnn  (level=word, vocab=2423, val OOV=15.7%, truncated train=0.7%) ===
+  cand 0: val macro-F1=0.600 (epoch 8, 14s)  {'model': {'emb_dim': 128, 'num_filters': 100, 'kernel_sizes': (2, 3, 4), 'dropout': 0.5}, 'lr': 0.002}
+  cand 1: val macro-F1=0.595 (epoch 17, 13s)  {'model': {'emb_dim': 128, 'num_filters': 64, 'kernel_sizes': (1, 2, 3), 'dropout': 0.5}, 'lr': 0.002}
+  cand 2: val macro-F1=0.623 (epoch 9, 21s)  {'model': {'emb_dim': 100, 'num_filters': 128, 'kernel_sizes': (2, 3, 4, 5), 'dropout': 0.6}, 'lr': 0.001}
+  -> TEST macro-F1 0.579 +/- 0.014 over seeds [42, 43, 44]  (params=423,551)
+
+=== charcnn  (level=char, vocab=67, val OOV=0.1%, truncated train=1.2%) ===
+  cand 0: val macro-F1=0.686 (epoch 8, 37s)  {'model': {'emb_dim': 48, 'num_filters': 128, 'kernel_sizes': (3, 5, 7), 'dropout': 0.5}, 'lr': 0.002}
+  cand 1: val macro-F1=0.695 (epoch 23, 48s)  {'model': {'emb_dim': 48, 'num_filters': 96, 'kernel_sizes': (2, 4, 6), 'dropout': 0.5}, 'lr': 0.002}
+  cand 2: val macro-F1=0.679 (epoch 17, 70s)  {'model': {'emb_dim': 64, 'num_filters': 128, 'kernel_sizes': (3, 5, 7), 'dropout': 0.6}, 'lr': 0.001}
+  -> TEST macro-F1 0.665 +/- 0.029 over seeds [42, 43, 44]  (params=59,667)
+
+=== transformer  (level=word, vocab=2423, val OOV=15.7%, truncated train=0.7%) ===
+  cand 0: val macro-F1=0.583 (epoch 9, 72s)  {'model': {'d_model': 128, 'n_heads': 4, 'n_layers': 2, 'd_ff': 256, 'dropout': 0.2}, 'lr': 0.001}
+  cand 1: val macro-F1=0.566 (epoch 20, 140s)  {'model': {'d_model': 128, 'n_heads': 4, 'n_layers': 2, 'd_ff': 256, 'dropout': 0.4}, 'lr': 0.0005}
+  cand 2: val macro-F1=0.593 (epoch 15, 30s)  {'model': {'d_model': 64, 'n_heads': 4, 'n_layers': 1, 'd_ff': 128, 'dropout': 0.3}, 'lr': 0.001}
+  -> TEST macro-F1 0.569 +/- 0.014 over seeds [42, 43, 44]  (params=188,867)
+
+saved results/dl_results.json

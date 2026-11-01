@@ -1,0 +1,183 @@
+{
+  "bilstm_attn": {
+    "level": "word",
+    "vocab_size": 2423,
+    "val_oov_rate": 0.15749949259184087,
+    "n_params": 344319,
+    "best_config": {
+      "model": {
+        "emb_dim": 100,
+        "hidden": 64,
+        "dropout": 0.3
+      },
+      "lr": 0.002
+    },
+    "grid_val_f1": [
+      0.6053,
+      0.5839,
+      0.6412
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "macro_f1_per_seed": [
+      0.5799411816084524,
+      0.6095400895400895,
+      0.583440256321898
+    ],
+    "macro_f1_mean": 0.5909738424901466,
+    "macro_f1_std": 0.013205807512913984,
+    "accuracy_mean": 0.6099656357388317,
+    "accuracy_std": 0.01336456115644678,
+    "f1_negative_mean": 0.5153314659197012,
+    "f1_neutral_mean": 0.6627995765877582,
+    "f1_positive_mean": 0.5947904849629806,
+    "seed42_macro_f1_ci95": [
+      0.5258563326414839,
+      0.6279706625558032
+    ],
+    "mean_train_seconds": 25.38858199119568,
+    "mean_best_epoch": 9.0
+  },
+  "textcnn": {
+    "level": "word",
+    "vocab_size": 2423,
+    "val_oov_rate": 0.15749949259184087,
+    "n_params": 423551,
+    "best_config": {
+      "model": {
+        "emb_dim": 100,
+        "num_filters": 128,
+        "kernel_sizes": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "dropout": 0.6
+      },
+      "lr": 0.001
+    },
+    "grid_val_f1": [
+      0.6004,
+      0.5945,
+      0.6225
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "macro_f1_per_seed": [
+      0.5606441434605559,
+      0.5809674941669203,
+      0.5949686050208018
+    ],
+    "macro_f1_mean": 0.5788600808827594,
+    "macro_f1_std": 0.01409191395595109,
+    "accuracy_mean": 0.6082474226804123,
+    "accuracy_std": 0.011716650942427718,
+    "f1_negative_mean": 0.48772141706924316,
+    "f1_neutral_mean": 0.681933608401962,
+    "f1_positive_mean": 0.566925217177073,
+    "seed42_macro_f1_ci95": [
+      0.5054656750110116,
+      0.6136557515281542
+    ],
+    "mean_train_seconds": 24.88107744852702,
+    "mean_best_epoch": 11.333333333333334
+  },
+  "charcnn": {
+    "level": "char",
+    "vocab_size": 67,
+    "val_oov_rate": 0.000562878183779727,
+    "n_params": 59667,
+    "best_config": {
+      "model": {
+        "emb_dim": 48,
+        "num_filters": 96,
+        "kernel_sizes": [
+          2,
+          4,
+          6
+        ],
+        "dropout": 0.5
+      },
+      "lr": 0.002
+    },
+    "grid_val_f1": [
+      0.686,
+      0.695,
+      0.6794
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "macro_f1_per_seed": [
+      0.6943127048390206,
+      0.6251556143980396,
+      0.675465178096757
+    ],
+    "macro_f1_mean": 0.6649778324446057,
+    "macro_f1_std": 0.02919091301171514,
+    "accuracy_mean": 0.6812714776632302,
+    "accuracy_std": 0.021597603247382375,
+    "f1_negative_mean": 0.6104241082658349,
+    "f1_neutral_mean": 0.7168975069252078,
+    "f1_positive_mean": 0.6676118821427747,
+    "seed42_macro_f1_ci95": [
+      0.6421400709983844,
+      0.7437979153600218
+    ],
+    "mean_train_seconds": 42.987004121144615,
+    "mean_best_epoch": 20.0
+  },
+  "transformer": {
+    "level": "word",
+    "vocab_size": 2423,
+    "val_oov_rate": 0.15749949259184087,
+    "n_params": 188867,
+    "best_config": {
+      "model": {
+        "d_model": 64,
+        "n_heads": 4,
+        "n_layers": 1,
+        "d_ff": 128,
+        "dropout": 0.3
+      },
+      "lr": 0.001
+    },
+    "grid_val_f1": [
+      0.5827,
+      0.5662,
+      0.5934
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "macro_f1_per_seed": [
+      0.576969967291109,
+      0.5492406924455606,
+      0.5816460916034774
+    ],
+    "macro_f1_mean": 0.569285583780049,
+    "macro_f1_std": 0.014301859695036548,
+    "accuracy_mean": 0.5902061855670103,
+    "accuracy_std": 0.016702939944350147,
+    "f1_negative_mean": 0.4727813122549964,
+    "f1_neutral_mean": 0.6441123642559797,
+    "f1_positive_mean": 0.590963074829171,
+    "seed42_macro_f1_ci95": [
+      0.5237521174787768,
+      0.6258372482305451
+    ],
+    "mean_train_seconds": 33.08370844523112,
+    "mean_best_epoch": 16.666666666666668
+  }
+}

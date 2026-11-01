@@ -1,0 +1,5 @@
+model,ms_per_sentence
+BiLSTM + attention,1.0
+TextCNN (word),0.44
+CharCNN,0.47
+Transformer (from scratch),0.31
